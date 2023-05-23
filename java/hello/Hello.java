@@ -25,6 +25,8 @@ public class Hello {
         final var p2 = new Person2("Pallavi", "Jain");
         final var p3 = new Person2("Pallavi", "Jain");
         final var p4 = p3;
+        var p5 = p1;
+
         System.out.println(p1);
         System.out.println(p2);
         System.out.println(p1 == p2); // Identity, false
@@ -34,5 +36,14 @@ public class Hello {
         System.out.println(p1.equals(p2)); // Equality, false
         System.out.println(p2.equals(p3)); // Equality, true
         System.out.println(p3.equals(p4)); // Equality, true
+
+        System.out.println(p5);
+        p5 = null;
+        System.out.println(p5);
     }
+}
+
+class User {
+    String username;
+    Optional<String> password;
 }

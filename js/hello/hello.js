@@ -23,6 +23,7 @@ const p1 = new Person2("John", "Doe");
 const p2 = new Person2("Pallavi", "Jain");
 const p3 = new Person2("Pallavi", "Jain");
 const p4 = p3;
+let p5 = p1;
 
 console.log(p1);
 console.log(p2);
@@ -40,6 +41,8 @@ console.log(p3 === p4);
 console.log(p1.equals(p2));
 console.log(p2.equals(p3));
 
-let v = "foo"
-v = p4
-v = 'bar'
+console.log(p5);
+
+p5 = null;
+
+console.log(p5);
